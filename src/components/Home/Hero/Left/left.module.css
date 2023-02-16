@@ -1,0 +1,31 @@
+.heroText {
+    font-size: 56px;
+    letter-spacing: 1%;
+   
+
+    @apply font-bold font-sgb pt-16 text-textPrimary
+}
+
+.heroDescription {
+    letter-spacing: 1%;
+    text-align: justify;
+    width: 75%;
+    line-height: 170%;
+ 
+    opacity: 60%;
+
+    @apply font-popins text-textPrimary 
+}
+
+.heroBtn {
+    @apply my-3 flex gap-11
+}
+.heroBtn button:nth-child(1){
+    
+    @apply bg-bgColor text-white py-3 px-3 min-w-[206px] rounded-lg
+}
+
+.heroBtn button:nth-child(2){
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.096);
+    @apply bg-white text-bgColor py-3 px-3 min-w-[174px] rounded-lg
+}

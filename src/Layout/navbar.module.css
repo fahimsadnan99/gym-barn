@@ -1,0 +1,52 @@
+.navbarWrapper {
+    @apply w-full   py-7 
+}
+
+.navbarItemWrapper {
+    @apply xs:px-5 sm:px-10  md:px-20 md:flex items-center justify-between
+}
+
+.navbarBrandWrapper {
+
+    font-size: 20px;
+    @apply font-sgr 
+
+}
+
+.navbarBrandWrapper span:nth-child(1){
+    background-color: #6765F0;
+    @apply text-white px-1 py-1 rounded-lg
+}
+.navbarBrandWrapper span:last-child{
+    color: #6765F0;
+}
+
+.navbarMenuWrapper{
+    font-size: 16px;
+    @apply md:space-x-2  xs:space-y-3 md:space-y-0 absolute md:static md:flex items-center justify-center  transition-all duration-300 ease-in  md:z-auto z-[-1] md:opacity-100 opacity-0
+}
+
+.navbarMenuWrapper .menu {
+    width: 114px;
+    border-radius: 10px;
+    @apply py-3 px-3 font-popins justify-center items-center 
+}
+
+.navbarMenuWrapper .menuSelect {
+    background-color: #264373;
+    color: #fff;
+    transition: 0.5s all;
+   
+}
+
+
+.navbarToggleIcon {
+    @apply cursor-pointer text-2xl absolute top-8 right-10 md:hidden
+}
+
+
+@media  (max-width: 767px) {
+    .navbarResponsiveMenu {
+         opacity: 1 !important;
+    }
+}
