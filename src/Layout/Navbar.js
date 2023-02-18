@@ -26,7 +26,7 @@ const Navbar = () => {
                     {menuList?.map((menu,index)=>{
                         return (
                         
-                        <li>
+                        <li >
                         <Link onClick={()=> setMenuIndex(index)}  className={`${Style.menu} ${menuIndex == index && Style.menuSelect}`}   key={index} href={`/#${menu == "About Us" ? menu.split(" ")[0] : menu} `}>{menu}</Link></li>)
                     })}
                 </ul>

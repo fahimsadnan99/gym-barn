@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       colors : {
         textPrimary : "#262524",
-        bgColor : "#264373"
+        bgColor : "#264373",
+        iconBgColor : "#8382EB",
       },
       screens : {
         "xs" : "300px"

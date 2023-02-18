@@ -1,0 +1,20 @@
+.kickWrapper {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+    @apply flex  md:w-[203px] md:h-[80px] xs:left-[-50px] bg-white rounded-lg absolute xs:bottom-20 md:bottom-32 gap-1 items-center  ;
+  }
+  .KickIcon {
+    @apply font-popins space-y-1  bg-inherit self-center xs:pr-3 md:pr-0;
+  }
+  .kickImg {
+
+    background: linear-gradient(to right, #5478EF, #D6DFFF);
+
+    @apply bg-inherit  mt-1 xs:w-[35.17px] xs:h-[35.17px] md:w-[60px] md:h-[60px] rounded-full p-2 mx-5;
+  }
+  .KickIcon p:nth-child(1) {
+    @apply font-bold text-textPrimary bg-inherit xs:text-[9.38px] md:text-[16px];
+  }
+  
+  .KickIcon p:nth-child(2) {
+    @apply xs:text-[7.03px] md:text-[12px] opacity-60 bg-inherit;
+  }

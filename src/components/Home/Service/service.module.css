@@ -1,0 +1,31 @@
+.serviceWrapper {
+    background: linear-gradient(to right,#6462F0,#9190E9) !important;
+    @apply  rounded-xl bg-inherit xs:w-[90%] md:w-[85%] mx-auto xs:p-5 md:p-10 xs:space-y-8 md:space-y-0 my-14 md:flex justify-around items-center
+}
+
+
+.icon {
+    
+    @apply xs:w-[80px] xs:h-[80px] bg-iconBgColor p-5 rounded-3xl
+}
+
+.description {
+    background: inherit;
+    @apply font-popins 
+}
+
+.description p {
+    background: inherit;
+    color: #fff;
+    font-size: 16px;
+    
+
+    @apply px-5 font-bold  
+    
+}
+
+.description button {
+ 
+    
+    @apply px-5 text-white font-[12px] opacity-50 mt-2
+}

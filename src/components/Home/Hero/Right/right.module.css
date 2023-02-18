@@ -1,0 +1,68 @@
+.HeroImg {
+  @apply relative
+}
+
+.kickWrapper {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+  @apply flex  md:w-[187px] xs:left-[-50px] bg-white rounded-lg absolute xs:top-10 md:top-20 gap-3 items-center md:left-10;
+}
+.KickIcon {
+  @apply font-popins space-y-1 justify-center items-center bg-inherit self-center xs:pr-3 md:pr-0;
+}
+.kickImg {
+  @apply bg-inherit ml-2 mt-1 xs:w-[35.17px] xs:h-[35.17px] md:w-[60px] md:h-[60px] rounded-full;
+}
+.KickIcon p:nth-child(1) {
+  @apply font-bold text-textPrimary bg-inherit xs:text-[9.38px] md:text-[16px];
+}
+
+.KickIcon p:nth-child(2) {
+  @apply xs:text-[7.03px] md:text-[12px] opacity-60 bg-inherit;
+}
+
+.push {
+  background: linear-gradient(to right, #5478ef, #d6dfff);
+
+  @apply absolute xs:bottom-28 md:bottom-16  rounded-full xs:p-1 md:p-3 xs:left-[-50px] md:left-12 xs:w-[35.17px] xs:h-[35.17px] md:w-[60px] md:h-[60px];
+}
+
+.stand {
+  background: linear-gradient(to right, #4bace1, #d8f1ff);
+  @apply absolute xs:top-10 md:top-20 xs:w-[35.17px] xs:h-[35.17px] md:w-[60px] md:h-[60px] xs:p-1 md:p-3 rounded-full xs:right-[-20px] md:right-14;
+}
+
+.ImgSection {
+  background-color: white;
+ 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+  @apply text-center xs:w-[109.62px] xs:h-[92.03px] md:w-[187px] md:h-[157px]  items-center absolute xs:bottom-20 md:bottom-16 xs:right-[-50px] md:right-8 xs:p-2 md:p-4 rounded-lg space-y-1.5 ;
+}
+.ImgIcon {
+
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.247);
+  @apply bg-bgColor xs:p-2 md:p-4 rounded-full mx-auto xs:w-[38.69px] xs:h-[38.69px] md:w-[66px] md:h-[66px];
+}
+
+.ImgSection p {
+  @apply bg-inherit font-popins ;
+}
+
+.ImgSection p:nth-child(2) {
+  @apply font-popins font-bold text-textPrimary xs:text-[9.03px] md:text-[16px];
+}
+
+.ImgSection p:nth-child(3) {
+  @apply font-popins  text-textPrimary opacity-50 xs:text-[7.03px] md:text-[12px];
+}
+
+@media (max-width: 778px) {
+  .ImgSection {
+    width: 109.62px;
+    height: 92.3px;
+  }
+  .HeroImg {
+    width: 210px;
+    height: 340px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+
+     line-height: 73px;
+    @apply font-sgr xs:text-[28px] md:text-[46px] text-textPrimary mt-10
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .header {
+    line-height: 39px;
+    font-weight: 700;
+}
+
+}

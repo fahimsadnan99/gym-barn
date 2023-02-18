@@ -1,0 +1,5 @@
+.icon {
+    background: linear-gradient(to right, #5478EF,#D6DFFF);
+
+    @apply p-3 rounded-full
+}

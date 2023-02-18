@@ -3,7 +3,7 @@
     letter-spacing: 1%;
    
 
-    @apply font-bold font-sgb pt-16 text-textPrimary
+    @apply font-bold font-sgb xs:pt-5 md:pt-16 text-textPrimary 
 }
 
 .heroDescription {
@@ -18,14 +18,45 @@
 }
 
 .heroBtn {
-    @apply my-3 flex gap-11
+    @apply my-3 flex xs:gap-8 md:gap-11
 }
 .heroBtn button:nth-child(1){
-    
-    @apply bg-bgColor text-white py-3 px-3 min-w-[206px] rounded-lg
+    box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.096);
+    @apply bg-bgColor xs:text-[12px] md:text-[16px]  text-white xs:py-1 xs:px-1 md:py-3 md:px-3 xs:min-w-[176px]  xs:md:max-w-[206px]  md:max-w-[206px] rounded-lg
 }
 
 .heroBtn button:nth-child(2){
     box-shadow: 0px 10px 10px  rgba(0, 0, 0, 0.096);
-    @apply bg-white text-bgColor py-3 px-3 min-w-[174px] rounded-lg
+    @apply bg-white xs:text-[12px]  text-bgColor xs:py-1.5 xs:px-3 md:py-3 md:px-3 xs:min-w-[125px] md:min-w-[174px] rounded-lg
+}
+
+.brand  {
+    @apply flex gap-9 mt-1 items-center
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .heroText {
+        font-size: 28px;
+    }
+
+    .naike {
+        width: 45px;
+        height: 21px;
+    }
+    .adidas  {
+        width: 41.5px ;
+        height: 42.09px;
+    }
+    .puma {
+        width: 61.63px;
+        height: 31.98px;
+    }
+    .rebook {
+        width: 92.22px;
+        height: 23.15px;
+    }
 }
