@@ -4,21 +4,30 @@ import heroBtn1 from "@/asset/heroBtn1.svg";
 import Brand from "./Brand";
 import Image from "next/image";
 import { AiFillPlayCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const index = () => {
   return (
-    <div>
+    <motion.div initial={{x: -4000}} animate={{x: 0}}  transition={{
+      type : "spring",
+      stiffness : 60,
+    }}>
       <div>
-        <p className={Style.heroText}>
+        <motion.p className={Style.heroText} whileHover={{scale : [1,1.2,1,1.2,1,1.2,1]}} transition={{duration : 5}}>
           Healthy in side <span style={{ color: "#8382EB" }}>fresh</span> out side
-        </p>
+        </motion.p>
         <p className={Style.heroDescription}>
           Exercise is a very important need for our body. Health and fitness will be obtained if you
           can do regular exercise and run a healthy routine.
         </p>
 
         <div className={Style.heroBtn}>
-          <button className="flex justify-between items-center">
+          <motion.button className="flex justify-between items-center"
+          whileTap={{scale : 0.8}}
+          transition={{
+            type : "spring"
+          }}
+          >
             Get started
             <Image
               src={heroBtn1}
@@ -27,21 +36,26 @@ const index = () => {
               width={26}
               height={26}
             />
-          </button>
-          <button className="flex gap-4 items-center ">
+          </motion.button>
+          <motion.button whileTap={{scale : 0.8}}
+          
+          transition={{
+            type : "spring"
+          }}
+          className="flex gap-4 items-center ">
             <AiFillPlayCircle
               className="rounded-full xs:w-[16.25px] xs:h-[16.25px] md:w-[30px] md:h-[30px]"
           
             ></AiFillPlayCircle>
             Learn more
-          </button>
+          </motion.button>
         </div>
 
         <div>
           <Brand></Brand>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

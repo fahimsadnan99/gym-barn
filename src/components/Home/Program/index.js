@@ -8,6 +8,7 @@ import Program5 from "../../../asset/Program6.svg";
 import Image from "next/image";
 import Style from "./program.module.css";
 
+
 const list = [
     {
         img : Program0,

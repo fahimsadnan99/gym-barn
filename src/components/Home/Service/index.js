@@ -9,7 +9,7 @@ import jump from "../../../asset/jump.svg";
 const index = () => {
   return (
     <div className={Style.serviceWrapper}>
-      <div className="flex bg-inherit  ">
+      <div className="flex bg-inherit ">
         <Image src={hug} className={Style.icon} />
         <div className={Style.description}>
           <p className="xs:text-[16px] md:text-[20px]">

@@ -1,6 +1,6 @@
 .navbarWrapper {
     z-index: 999;
-    @apply w-full   py-7 shadow shadow-black 
+    @apply w-full   py-7 shadow-sm
 }
 
 .navbarItemWrapper {

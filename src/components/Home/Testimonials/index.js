@@ -4,6 +4,8 @@ import Image from "next/image";
 import t1 from "../../../asset/t1.svg";
 
 const index = () => {
+
+  
   return (
     <div className="w-[85%] mx-auto my-20">
       <p className="xs:text-[28px] md:text-[46px] font-sgr text-textPrimary text-center mb-10">Testimonials</p>
