@@ -1,16 +1,18 @@
 import React from "react";
-import Quote from "../../../asset/qute.svg";
-import Image from "next/image";
-import t1 from "../../../asset/t1.svg";
+
+import ImgSlider from "./ImgSlider";
+
+
 
 const index = () => {
 
   
   return (
     <div className="w-[85%] mx-auto my-20">
-      <p className="xs:text-[28px] md:text-[46px] font-sgr text-textPrimary text-center mb-10">Testimonials</p>
+      <p className="xs:text-[28px] md:text-[46px] font-sgr text-textPrimary text-center my-24">Testimonials</p>
 
-      <div className="grid md:grid-cols-2 gap-6">
+ <ImgSlider></ImgSlider>
+      {/* <div className="grid md:grid-cols-2 gap-6">
         <div className="w-[90%] xs:p-10 md:p-12 shadow-2xl">
           <div className="flex">
             <Image src={Quote} className="self-start" />{" "}
@@ -53,7 +55,7 @@ const index = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
